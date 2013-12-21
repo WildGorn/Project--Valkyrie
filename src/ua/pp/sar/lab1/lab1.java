@@ -15,13 +15,15 @@ public class lab1 {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String s = reader.readLine();
         StringBuffer sb = new StringBuffer();
-        sb.append("Hello, ");
-        sb.append(s);
-        sb.append("!");
-        if (s != null) {
-            System.out.println(sb.toString());
-        } else {
+
+
+        if (s.isEmpty()) {
             System.out.println("Привет незнакомец");
+        } else {
+            sb.append("Hello, ");
+            sb.append(s);
+            sb.append("!");
+            System.out.println(sb.toString());
         }
     }
 }
